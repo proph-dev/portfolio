@@ -1,0 +1,63 @@
+img {
+  @apply w-6 h-6;
+}
+
+button {
+  @apply hover:bg-black/5;
+}
+
+.taskbar {
+  @apply fixed bottom-0 left-0 right-0 h-12 flex items-center justify-between px-3 z-50 shadow-lg shadow-black bg-white/80 backdrop-blur-xl;
+
+  .leftSection, .centerSection, .rightSection {
+    @apply flex justify-between gap-2;
+  }
+
+  .centerSection button {
+    @apply flex justify-center items-center w-10 h-10;
+  }
+
+  .startButton, .searchButton, .taskViewButton {
+    @apply bg-transparent border-none p-2 rounded cursor-pointer flex items-center justify-center text-black hover:bg-black/5;
+  }
+
+  .searchButton svg {
+    @apply w-10 h-10;
+  }
+  
+  .systemTray {
+    @apply flex items-center gap-2 text-base;
+  }
+  
+  .dateTime {
+    @apply text-center cursor-pointer px-2 py-1 rounded;
+  
+    .time {
+      @apply text-xs font-medium;
+    }
+  
+    .date {
+      @apply text-[11px];
+    }
+  }
+  
+  .meteo {
+    @apply flex items-center text-left gap-1 px-2 py-1 text-black;
+    
+    img {
+      @apply mr-2;
+    }
+  
+    .meteoInfo {
+      @apply flex flex-col;
+  
+      span {
+        @apply text-xs font-medium;
+        
+        &:last-child {
+          @apply ml-0.5 text-gray-500 font-normal;
+        }
+      }
+    }
+  }
+}
