@@ -58,12 +58,12 @@ const Taskbar: React.FC = () => {
         <button className={styles.chromeButton}>
           <img src={Chrome} alt="Chrome" className={styles.chrome} />
         </button>
-        <button className={styles.linkedinButton}>
+        <a href="https://www.linkedin.com/in/theo-lemoine/" target="_blank" rel="noopener noreferrer" className={styles.linkedinButton}>
           <img src={LinkedIn} alt="LinkedIn" className={styles.linkedin} />
-        </button>
-        <button className={styles.githubButton}>
+        </a>
+        <a href="https://github.com/proph-dev" target="_blank" rel="noopener noreferrer" className={styles.githubButton}>
           <img src={GitHub} alt="GitHub" className={styles.github} />
-        </button>
+        </a>
         <button className={styles.mailButton}>
           <img src={Mail} alt="Mail" className={styles.mail} />
         </button>

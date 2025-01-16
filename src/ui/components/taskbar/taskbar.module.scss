@@ -2,7 +2,7 @@ img {
   @apply w-6 h-6;
 }
 
-button {
+button, a {
   @apply hover:bg-black/5;
 }
 
@@ -13,7 +13,7 @@ button {
     @apply flex justify-between gap-2;
   }
 
-  .centerSection button {
+  .centerSection button, .centerSection a {
     @apply flex justify-center items-center w-10 h-10;
   }
 
