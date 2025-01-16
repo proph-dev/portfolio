@@ -1,15 +1,20 @@
+import BackgroundDesktop from "./assets/img/background-desktop.jpg"
+import SelectionArea from "./ui/components/selection/SelectionArea"
 import Taskbar from "./ui/components/taskbar/Taskbar"
-import BackgroundDesktop from "./assets/img/background-desktop.webp"
 
 function App() {
   return (
     <main>
-      <img 
-        src={BackgroundDesktop}
-        alt="Desktop background"
-        className="bg-desktop"
-      />
-      <div className="overlay"></div>
+      <div>
+        <img 
+          src={BackgroundDesktop}
+          alt="Desktop background"
+          className="bg-desktop"
+        />
+        <div className="overlay"></div>
+        <SelectionArea />
+      </div>
+      
       <Taskbar />
     </main>
   )
